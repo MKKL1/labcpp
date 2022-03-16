@@ -13,6 +13,12 @@ int main()
     cout << prostokat1.doTekstu() << endl;
     cout << prostokat2.doTekstu() << endl;
 
+    prostokat1 = prostokat2;
+
+    cout << prostokat1.doTekstu() << endl;
+    cout << prostokat2.doTekstu() << endl;
+
+
     /*Lab 02
     cout << "Laboratoria test2" << endl;
     ZLab02 lab02;

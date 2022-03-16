@@ -63,3 +63,12 @@ std::string Prostokat::doTekstu() {
 
     return napis;
 }
+
+Prostokat& Prostokat::operator=(Prostokat & prostokat2) {
+    bok1 = prostokat2.bok1;
+    bok2 = prostokat2.bok2;
+    pole = prostokat2.pole;
+    obwod = prostokat2.obwod;
+    nazwa = prostokat2.nazwa;
+    return *this;
+}

@@ -18,6 +18,7 @@ private:
 public:
     Prostokat(double a=1, double b=2, string n = "?");
     ~Prostokat();
+    Prostokat& operator=(Prostokat & prostokat2);
     bool czyPoprawny();
     const string& jakaNazwa();
     double podajPole();
