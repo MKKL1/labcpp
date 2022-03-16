@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Laboratoria" << endl;
+    cout << "Laboratoria test2" << endl;
     ZLab02 lab02;
     lab02.menu();
     return 0;
