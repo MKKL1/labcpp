@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
+        prostokat.cpp \
         zlab02.cpp
 
 HEADERS += \
+    prostokat.h \
     zlab02.h
