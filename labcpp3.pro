@@ -7,11 +7,13 @@ SOURCES += \
         generatorlosowy.cpp \
         main.cpp \
         prostokat.cpp \
+        sasiedztwo.cpp \
         ustawieniasymulacji.cpp \
         zlab02.cpp
 
 HEADERS += \
     generatorlosowy.h \
     prostokat.h \
+    sasiedztwo.h \
     ustawieniasymulacji.h \
     zlab02.h
