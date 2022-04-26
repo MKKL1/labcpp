@@ -4,8 +4,12 @@
 
 class Obliczenia
 {
+protected:
+    const double pi = 3.14;
 public:
-    Obliczenia();
+    virtual double promienKolaWgPola() = 0;
+    virtual double promenOkreguWgObwodu() = 0;
+    virtual ~Obliczenia();
 };
 
 #endif // OBLICZENIA_H
