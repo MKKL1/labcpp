@@ -21,6 +21,10 @@ string nazwaRodzaju(RodzajMieszkanca rodzaj) {
 
 int main()
 {
+
+
+
+    /*
     Sasiedztwo sasiedztwo;
 
     sasiedztwo.okreslSasiada(P, GLON);
@@ -66,6 +70,8 @@ int main()
     }
 
     cout << endl;
+    */
+
     //Lab 04
     /*UstawieniaSymulacji & UST1 = UstawieniaSymulacji::pobierzUstawienia();
 

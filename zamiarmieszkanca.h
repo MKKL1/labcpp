@@ -6,7 +6,6 @@
 class ZamiarMieszkanca
 {
 public:
-    ZamiarMieszkanca();
     const AkcjaMieszkanca akcja;
     const Polozenie gdzie;
 
