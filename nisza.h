@@ -23,8 +23,19 @@ public:
 
     bool lokatorZywy() const;
 
-    char jakisSymbol() const;
-//TODO
+    char jakiSymbol() const;
+private:
+
+    ZamiarMieszkanca aktywujLokatora(Sasiedztwo sasiedztwo) {
+        return lokator->wybierzAkcje(sasiedztwo);
+    }
+    Mieszkaniec * wypuscPotomka() {
+        return lokator->dajPotomka();
+    }
+
+    void przyjmijZdobycz(Mieszkaniec * ofiara) {
+        lokator->przyjmijZdobycz(ofiara);
+    }
 };
 
 #endif // NISZA_H

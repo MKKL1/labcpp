@@ -5,6 +5,13 @@
 #include "generatorlosowy.h"
 #include "sasiedztwo.h"
 
+#include "nisza.h"
+#include "grzyb.h"
+#include "glon.h"
+#include "bakteria.h"
+
+static Nisza n1, n2, n3;
+
 using namespace std;
 
 string nazwaRodzaju(RodzajMieszkanca rodzaj) {
@@ -18,10 +25,35 @@ string nazwaRodzaju(RodzajMieszkanca rodzaj) {
         case NIEZNANE: return "NIEZNANE";
     }
 }
+static char sep = UstawieniaSymulacji::pobierzUstawienia().znakSeparator;
+
+void wyswietlNisze()
+{
+    cout << n1.jakiSymbol() << sep
+    << n2.jakiSymbol() << sep
+    << n3.jakiSymbol() << endl;
+}
 
 int main()
 {
+    cout << "Puste nisze: ";
+    wyswietlNisze();
 
+    cout << "Lokowanie mieszkańców: ";
+    n1.przyjmijLokatora(new Glon());
+    n3.przyjmijLokatora(new Grzyb());
+    wyswietlNisze();
+
+    cout << "Przesuwanie lokatorów: ";
+    n2 = n1;
+    wyswietlNisze();
+
+    cout << "Przesuwanie lokatorów:";
+    n3 = n2;
+    wyswietlNisze();
+
+    cout << endl;
+    return 0;
 
 
     /*
