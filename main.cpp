@@ -10,6 +10,7 @@
 #include "glon.h"
 #include "bakteria.h"
 
+#include "zlab09.h"
 static Nisza n1, n2, n3;
 
 using namespace std;
@@ -23,7 +24,7 @@ string nazwaRodzaju(RodzajMieszkanca rodzaj) {
         case SCIANA: return "ŚCIANA";
         case TRUP: return "TRUP";
         case NIEZNANE: return "NIEZNANE";
-    }
+   }
 }
 static char sep = UstawieniaSymulacji::pobierzUstawienia().znakSeparator;
 
@@ -36,6 +37,15 @@ void wyswietlNisze()
 
 int main()
 {
+
+    ZLab09 zlab;
+//    zlab.rozmiary();
+//    zlab.skalar();
+//    zlab.tablica1D();
+//    zlab.tablica2D(3, 5);
+
+    zlab.referencja();
+    /*
     cout << "Puste nisze: ";
     wyswietlNisze();
 
@@ -55,6 +65,7 @@ int main()
     cout << endl;
     return 0;
 
+    */
 
     /*
     Sasiedztwo sasiedztwo;

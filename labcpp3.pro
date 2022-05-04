@@ -17,7 +17,8 @@ SOURCES += \
         sasiedztwo.cpp \
         ustawieniasymulacji.cpp \
         zamiarmieszkanca.cpp \
-        zlab02.cpp
+        zlab02.cpp \
+        zlab09.cpp
 
 HEADERS += \
     bakteria.h \
@@ -33,4 +34,5 @@ HEADERS += \
     sasiedztwo.h \
     ustawieniasymulacji.h \
     zamiarmieszkanca.h \
-    zlab02.h
+    zlab02.h \
+    zlab09.h
