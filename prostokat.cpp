@@ -64,11 +64,22 @@ std::string Prostokat::doTekstu() {
     return napis;
 }
 
-Prostokat& Prostokat::operator=(Prostokat & prostokat2) {
-    bok1 = prostokat2.bok1;
-    bok2 = prostokat2.bok2;
-    pole = prostokat2.pole;
-    obwod = prostokat2.obwod;
-    nazwa = prostokat2.nazwa;
+//ostream& Prostokat::operator<<(ostream& strumien, Prostokat & prostokat) {
+//    strumien << prostokat.doTekstu();
+//    return strumien;
+//}
+
+//istream& Prostokat::operator>>(istream& strumien, Prostokat & prostokat) {
+//    double a,b;
+//    strumien >> a >> b;
+//    prostokat.zmienBoki(a,b);
+//    return strumien;
+//}
+
+Prostokat& Prostokat::operator++(int) {
+    this->bok1 *= 2;
+    this->bok2 *= 2;
+    this->obliczPole();
+    this->obliczObwod();
     return *this;
 }

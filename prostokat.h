@@ -2,6 +2,7 @@
 #define PROSTOKAT_H
 
 #include <string>
+#include <iostream>
 using namespace std;
 class Prostokat
 {
@@ -18,7 +19,12 @@ protected:
 public:
     Prostokat(double a=1, double b=2, string n = "?");
     ~Prostokat();
-    Prostokat& operator=(Prostokat & prostokat2);
+    //TODO
+    //std::ostream& operator<<(std::ostream& strumien, Prostokat& prostokat);
+    //istream& operator>>(istream& strumien, Prostokat& prostokat);
+    Prostokat& operator++(int);
+    bool operator!() {return czyPoprawny(bok1, bok2);}
+
     bool czyPoprawny();
     const string& jakaNazwa();
     double podajPole();

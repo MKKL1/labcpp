@@ -65,7 +65,7 @@ void ZLab09::tablica2D(int w, int k)
     }
 
     for(int i=0; i<k; i++)
-        delete [] wskInt2D[i];
+        delete wskInt2D[i];
 
     delete [] wskInt2D;
 

@@ -11,6 +11,8 @@
 #include "bakteria.h"
 
 #include "zlab09.h"
+#include "zlab10.h"
+
 static Nisza n1, n2, n3;
 
 using namespace std;
@@ -38,13 +40,23 @@ void wyswietlNisze()
 int main()
 {
 
-    ZLab09 zlab;
+//    ZLab10 zlab10;
+//    zlab10.wektor();
+//    zlab10.wektor_sortowanie();
+//    zlab10.zbior();
+//    zlab10.mapa();
+    Prostokat p(2,3,"Prostokat");
+    cout << p.doTekstu() << endl;
+    p++;
+    cout << p.doTekstu()<< endl;
+    cout << !p<< endl;
+//    ZLab09 zlab;
 //    zlab.rozmiary();
 //    zlab.skalar();
 //    zlab.tablica1D();
 //    zlab.tablica2D(3, 5);
 
-    zlab.referencja();
+//    zlab.referencja();
     /*
     cout << "Puste nisze: ";
     wyswietlNisze();
