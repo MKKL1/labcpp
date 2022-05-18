@@ -80,8 +80,8 @@ void Sasiedztwo::zmienIndeksyWgPolozenia(Polozenie polozenie, long &wiersz, long
 }
 
 void Sasiedztwo::zmienIndeksyWgPolozenia(Polozenie polozenie,
-                                         unsigned short &wiersz,
-                                         unsigned short &kolumna) {
+                                         unsigned int &wiersz,
+                                         unsigned int &kolumna) {
     long w = static_cast<long>(wiersz);
     long k = static_cast<long>(kolumna);
 
@@ -89,4 +89,18 @@ void Sasiedztwo::zmienIndeksyWgPolozenia(Polozenie polozenie,
 
     wiersz = static_cast<unsigned int>(w);
     kolumna = static_cast<unsigned int>(k);
+}
+
+
+template <class T>
+void Sasiedztwo::zmienIndeksyWgPolozenia(Polozenie polozenie,
+                                         T &wiersz,
+                                         T &kolumna) {
+    long w = static_cast<long>(wiersz);
+    long k = static_cast<long>(kolumna);
+
+    zmienIndeksyWgPolozenia(polozenie,w,k);
+
+    wiersz = static_cast<T>(w);
+    kolumna = static_cast<T>(k);
 }

@@ -8,6 +8,7 @@ SOURCES += \
         generatorlosowy.cpp \
         glon.cpp \
         grzyb.cpp \
+        indeks2d.cpp \
         kwadrat.cpp \
         main.cpp \
         mieszkaniec.cpp \
@@ -15,6 +16,7 @@ SOURCES += \
         organizm.cpp \
         prostokat.cpp \
         sasiedztwo.cpp \
+        srodowisko.cpp \
         ustawieniasymulacji.cpp \
         zamiarmieszkanca.cpp \
         zlab02.cpp \
@@ -26,6 +28,7 @@ HEADERS += \
     generatorlosowy.h \
     glon.h \
     grzyb.h \
+    indeks2d.h \
     kwadrat.h \
     mieszkaniec.h \
     nisza.h \
@@ -33,6 +36,7 @@ HEADERS += \
     organizm.h \
     prostokat.h \
     sasiedztwo.h \
+    srodowisko.h \
     ustawieniasymulacji.h \
     zamiarmieszkanca.h \
     zlab02.h \

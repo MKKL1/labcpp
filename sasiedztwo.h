@@ -21,10 +21,14 @@ public:
 
     static void zmienIndeksyWgPolozenia(Polozenie polozenie,
                                         long & wiersz, long & kolumna);
+    template <class T>
     static void zmienIndeksyWgPolozenia(Polozenie polozenie,
-                                        unsigned short & wiersz,
-                                        unsigned short & kolumna);
+                                        T & wiersz,
+                                        T & kolumna);
 
+    static void zmienIndeksyWgPolozenia(Polozenie polozenie,
+                                        unsigned int & wiersz,
+                                        unsigned int & kolumna);
 };
 
 #endif // SASIEDZTWO_H
