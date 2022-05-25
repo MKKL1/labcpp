@@ -12,6 +12,7 @@
 
 #include "zlab09.h"
 #include "zlab10.h"
+#include "zlab12.h"
 
 #include "indeks2d.h"
 
@@ -34,27 +35,28 @@ string nazwaRodzaju(RodzajMieszkanca rodzaj) {
 int main()
 {
 
-    Srodowisko ekoSystem(8,12);
-    ekoSystem.lokuj(new Glon(), 0, 10);
-    ekoSystem.lokuj(new Glon(), 1, 10);
-    ekoSystem.lokuj(new Glon(), 1, 13);
-    ekoSystem.lokuj(new Glon(), 1, 11);
-    ekoSystem.lokuj(new Glon(), 0, 0);
-    ekoSystem.lokuj(new Glon(), 3, 3);
-    ekoSystem.lokuj(new Glon(), 2, 6);
+//    ZLab12 zlab12;
+//    zlab12.strumienTekstowy();
+//    cout << endl;
+//    zlab12.zapisTekstowyDoPliku("/home/student/plik.txt");
+//    cout << endl;
+//    zlab12.odczytPlikuTekstowego("/home/student/plik.txt");
+//    cout << endl;
+//    zlab12.zapisBinarnyDoPliku("/home/student/binarny.bin");
+//    cout << endl;
+//    zlab12.odczytPlikuBinarnego("/home/student/binarny.bin");
 
-    for(unsigned long i = 0;i < 200 && !ekoSystem.martwy(); i++){
+    Srodowisko ekoSystem = Srodowisko::czytajZPliku("start.txt");
+    for(
+        unsigned long i = 0;i < 200 && !ekoSystem.martwy(); i++){
         //system("clear");
         cout << "Krok symulacji: " << i << endl << ekoSystem.doTekstu() << endl;
 
-        //cin.ignore(true);
-        cout << "A";
-        //cin.get();
-        cout << "A";
+        cin.ignore(true);
         ekoSystem.wykonajKrokSymulacji();
-        cout << "A";
     }
     cout << "out";
     cout << endl;
+
     return 0;
 }

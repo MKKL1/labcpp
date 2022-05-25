@@ -32,7 +32,7 @@ public:
     void wykonajAkcje(unsigned int wiersz, unsigned int kolumna);
 
     void wykonajKrokSymulacji();
-
+    static Srodowisko czytajZPliku(std::string nazwaPliku);
     std::string doTekstu() const;
 };
 

@@ -1,6 +1,6 @@
 #include "nisza.h"
 
-Nisza::Nisza() :lokator(nullptr) {}
+Nisza::Nisza():lokator(nullptr) {}
 
 Nisza::Nisza(Nisza & innaNisza) {
     if(innaNisza.zajeta()) {
